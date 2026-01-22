@@ -11,4 +11,4 @@ python identify.py --data_type dialogue
 
 
 
-The activation_hy.py and identify.py files included contribution from [Maharaj](https://github.com/maharajbrahma)
+The activation_hy.py and identify.py files included contribution from [Maharaj](https://github.com/maharajbrahma) to adapt the original code to support models loaded via HuggingFace. 
