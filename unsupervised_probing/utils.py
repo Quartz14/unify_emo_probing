@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import re
 
-def primary_emotions_concept_dataset(case,data_dir="dataset/emotions", user_tag='', assistant_tag='', seed=0):
+def primary_emotions_concept_dataset(case,data_dir="datasets/rep_llm_data", user_tag='', assistant_tag='', seed=0):
     random.seed(0)
 
     if (case=='explicit_emotion'):
@@ -56,7 +56,7 @@ def primary_emotions_concept_dataset(case,data_dir="dataset/emotions", user_tag=
     return formatted_data
 
 
-def primary_emotions_concept_dataset_crowd(hidden,data_dir="dataset/emotions/crowd-event_train.csv"):
+def primary_emotions_concept_dataset_crowd(hidden,data_dir="datasets/crowd-event_train.csv"):
     random.seed(0)
     df = pd.read_csv(data_dir)
     template_str = 'What is the inferred emotion in the following scenario:\nScenario: {scenario}\nAnswer: '
@@ -102,7 +102,7 @@ def primary_emotions_concept_dataset_crowd(hidden,data_dir="dataset/emotions/cro
     return formatted_data
 
 
-def primary_emotions_concept_dataset_twitter(data_dir="dataset/emotions/reduced_emotion_train.csv"):
+def primary_emotions_concept_dataset_twitter(data_dir="datasets/reduced_emotion_train.csv"):
     random.seed(0)
     df = pd.read_csv(data_dir)
     template_str = 'What is the inferred emotion in the following scenario:\nScenario: {scenario}\nAnswer: '
@@ -148,7 +148,7 @@ def primary_emotions_concept_dataset_twitter(data_dir="dataset/emotions/reduced_
     return formatted_data
 
 
-def primary_emotions_concept_dataset_dialogue(emotion_label='last',conv_type='full',data_dir="dataset/emotions/dailydialog/dailydialog_train_processed_filtered.json", user_tag='', assistant_tag='', seed=0):
+def primary_emotions_concept_dataset_dialogue(emotion_label='last',conv_type='full',data_dir="datasets/dailydialog_train_processed_filtered.json", user_tag='', assistant_tag='', seed=0):
     random.seed(0)
 
     df = pd.read_csv(data_dir)
