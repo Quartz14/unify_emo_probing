@@ -90,13 +90,13 @@ os.makedirs(f'{model_short_name}/{args.task_type}', exist_ok=True)
 
 def get_data(data_type = args.task_type):
     if(data_type=='twitter'):
-        train_data = pd.read_csv('datasets/emotion_train.csv')
-        test_data = pd.read_csv('datasets/emotion_test.csv')
+        train_data = pd.read_csv('datasets/reduced_emotion_train.csv')
+        test_data = pd.read_csv('datasets/reduced_emotion_test.csv')
         inp_col = 'text'
         label_col = 'label'
 
     elif(data_type=='crowd'):
-        train_data = pd.read_csv('crowd-event_train.csv')
+        train_data = pd.read_csv('datasets/crowd-event_train.csv')
         test_data = pd.read_csv('datasets/crowd-event_test.csv')
         emotions_list = ['anger','disgust', 'fear', 'joy', 'sadness', 'surprise']
         emotion_to_id = {emotion: i for i, emotion in enumerate(emotions_list)}
