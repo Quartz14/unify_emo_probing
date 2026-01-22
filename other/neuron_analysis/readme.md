@@ -1,0 +1,1 @@
+This directory consists of the code used for emotion neuron identification. It was adapted from [Language-Specific-Neurons-LAPE](https://github.com/RUCAIBox/Language-Specific-Neurons/tree/main) The activation_hy.py and identify.py files included contribution from [Maharaj](https://github.com/maharajbrahma)
