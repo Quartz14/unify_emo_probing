@@ -1,6 +1,7 @@
 # A Unified View on Emotion Representation in Large Language Models
 
 Code repository for paper "A Unified View on Emotion Representation in Large Language Models".
+[Paper page](https://aclanthology.org/2026.eacl-long.165/)
 
 ## Motivation
 Although several works have used interpretability techniques to understand emotion identification capabilities of LLMs, there are contradictions in the findings regarding the layers early / middle where emotion representation exists. We opine that these contradictions arise due to the use of different prompts and datasets having different difficulty levels. Our intent is to analyze the setup using prompts with different expressivity levels across datasets with different difficulty levels – to get an overall understanding of the ability of LLMs in identifying emotions at their representation level. We additionally try to assess the reasoning ability of such models with an emotion comprehension task.
@@ -29,5 +30,5 @@ The respective folders include the codes for generating the plots in the paper.
 The code for supervised_probing was adapted from [emo-llm](https://github.com/aminbana/emo-llm) and the code for unsupervised_probing was adapted from [representation-engineering](https://github.com/andyzoujm/representation-engineering). Gemini-2.5 Language Model was used to generate some of the code snippets for the plots. 
 
 ## Citation
-Our paper is recently accepted at EACL 2026, 
-If you find our work useful for your research, please kindly cite our paper as follows (official citation to be updated).
+Our paper is accepted at EACL 2026, 
+If you find our work useful for your research or work, please kindly cite our paper: [A Unified View on Emotion Representation in Large Language Models](https://aclanthology.org/2026.eacl-long.165/) (Maheswaran & Desarkar, EACL 2026)
